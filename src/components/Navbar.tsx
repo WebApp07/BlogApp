@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import Image from "./Image";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="w- h-16 md:h-20 flex items-center justify-between">
+      {/* LOGO */}
       <div className="flex items-center gap-4 text-2xl font-bold">
-        {/* LOGO */}
-        <img src="/logo.png" alt="logo" className="w-8 h-8" />
+        <Image src="logo.png" alt="Amine Logo" w={32} h={32} />
         <span>AmineBlog</span>
       </div>
       {/* MOBILE MENU */}
