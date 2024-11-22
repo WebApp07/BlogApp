@@ -17,7 +17,7 @@ const FeaturedPosts = () => {
         <div className="flex items-center gap-4">
           <h1 className="font-semibold lg:text-lg">01.</h1>
           <Link className="text-blue-800 lg:text-lg">Web Design</Link>
-          <span className="text-gray-500">2 days ago</span>
+          <span className="text-gray-500">3 days ago</span>
         </div>
         {/* title */}
         <Link
