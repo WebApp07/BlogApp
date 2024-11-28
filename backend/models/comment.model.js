@@ -1,12 +1,12 @@
 import { Schema } from "mongoose";
 import mongoose from "mongoose";
 
-const commmentSchema = new Schema(
+const commentSchema = new Schema(
   {
     user: {
       type: Schema.Types.ObjectId,
       ref: "User",
-      requires: true,
+      required: true,
     },
     post: {
       type: Schema.Types.ObjectId,
@@ -21,4 +21,4 @@ const commmentSchema = new Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Comment", usercommmentSchema);
+export default mongoose.model("Comment", commentSchema);

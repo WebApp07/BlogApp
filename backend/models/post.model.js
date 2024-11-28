@@ -8,7 +8,6 @@ const postSchema = new Schema(
       ref: "User",
       required: true,
     },
-
     img: {
       type: String,
     },
@@ -16,7 +15,6 @@ const postSchema = new Schema(
       type: String,
       required: true,
     },
-
     slug: {
       type: String,
       required: true,
@@ -25,7 +23,12 @@ const postSchema = new Schema(
     desc: {
       type: String,
     },
+    category: {
+      type: String,
+      default: "general",
+    },
     content: {
+      type: String,
       required: true,
     },
     isFeatured: {
@@ -33,7 +36,7 @@ const postSchema = new Schema(
       default: false,
     },
     visit: {
-      type: Boolean,
+      type: Number,
       default: 0,
     },
   },
