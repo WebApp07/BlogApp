@@ -3,8 +3,11 @@ import userRouter from "./routes/user.routes.js";
 import postRouter from "./routes/post.route.js";
 import commentRouter from "./routes/comment.route.js";
 import connectDB from "./lib/connectDB.js";
+import webhookRouter from "./controllers/webhook.controller.js";
 
 const app = express();
+app.use("/webhooks", webhookRouter);
+
 app.use(express.json());
 
 ///app.get("/test", (req, res) => {
